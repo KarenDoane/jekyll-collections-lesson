@@ -3,3 +3,132 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/*
+  text: #2f3640
+  alt-text: #c23616
+  bg: #f5f6fa
+  dark-bg: #7f8fa6
+*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #2f3640;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #c23616;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #c23616;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2f3640;
+}
+
+section {
+  background-color: #f5f6fa;
+  padding: 5% 10%;
+}
+
+h2  { font-size: 2.2rem;  }
+h3  { font-size: 1.8rem;  }
+h4  { font-size: 1.4rem;  }
+p   { font-size: 1rem;  }
+
+p, ul {
+   margin-bottom: 0.8rem;
+}
+
+/* this makes sure that the last element in any container doesn't have margin-bottom */
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child {
+  margin-bottom:0;
+}
+
+hr { /* this is a line element */
+  border: none;
+  border-bottom: 3px solid;
+  width: 4rem;
+  margin-bottom: 1rem;
+}
+
+.dark-section {
+  background-color: #7f8fa6;
+  color: #f5f6fa;
+}
+
+.padded {
+  padding: 5%;
+}
+
+.padded-1 {
+  padding: 1rem;
+}
+
+.padded-2 {
+  padding: 2rem;
+}
+
+.centered {
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.bg-img {
+  background-position: center;
+  background-size: cover;
+}
+
+.capped-width { width: 80%; margin: auto;}
+
+.tall-50  {  min-height: 50vh;   }
+.tall-100 {  min-height: 100vh;  }
+
+.flex-flip:nth-child(2n){  flex-direction: row-reverse; }
+
+.btn {
+  text-decoration: none;
+  color: #c23616;
+  border: 2px solid;
+  padding: 0.6rem 2rem;
+  margin-top: 1rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn:hover {
+  color: #2f3640;
+}
+
+.dark-section .btn {   /* this is for a button on a dark background */
+  border: 2px solid #f5f6fa;
+  color: #f5f6fa;
+}
+
+.dark-section .btn:hover {
+  color: #c23616;
+  border-color: #c23616;
+}
